@@ -1,0 +1,30 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="form.css" media="screen"/>
+<script src="https://hosted.paysafe.com/checkout/v2/paysafe.checkout.min.js" type = "text/javascript">
+    </script>
+</head>
+<body>
+<div class="container" href="form.css">  
+  <form id="contact" action="#" th:action="@{/addUser}" th:object="${user}" method="post">
+    <h3><center>User Form</center></h3>
+    <fieldset>
+      <input placeholder="Your name" type="text" tabindex="1" required autofocus>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" tabindex="2" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Amount" type="text" tabindex="4" required>
+    </fieldset>
+    <fieldset>
+      <button  type="submit" id = "payNow" data-submit="...Sending">Proceed to Pay</button>
+    </fieldset>
+ 
+  </form>
+</div>
+</body>
+</html>
